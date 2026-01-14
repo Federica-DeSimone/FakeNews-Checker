@@ -1,0 +1,632 @@
+{
+  "id": "a22d9bf7-1c52-42f1-84ca-69891b0013d6",
+  "version": "2.0",
+  "name": "FakeNewsChecker",
+  "url": "http://localhost:8080/FakeNewsChecker/Interface/AutenticazioneGUI/Login.jsp",
+  "tests": [{
+    "id": "d13b0d19-a7f4-4c80-a0bb-d293c00eda24",
+    "name": "Login",
+    "commands": [{
+      "id": "f2bc316e-acdc-47c8-80f0-03f8e395c94d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FakeNewsChecker/Interface/AutenticazioneGUI/Login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa829cd-91a9-4118-b903-e007c5a3ffde",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c01e567-26bf-4846-8d91-67505802cc47",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40d1b64a-34f8-4716-9123-49e0abf0e216",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "user@test.com"
+    }, {
+      "id": "42f313f9-dc6e-4195-84f3-7783c3602d87",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0d99512-52ff-408f-a662-06fac1149c3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Password123!"
+    }, {
+      "id": "33e9fc8b-806e-449c-9ae4-33ccae1fb8bd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e9ccfecd-5546-4a45-abc2-4fa599af0bb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user-btn",
+      "targets": [
+        ["css=.user-btn", "css:finder"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'User Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f01c765e-78c3-43e4-9480-b0b31fa457b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.logout", "css:finder"],
+        ["xpath=//a[contains(@href, '/FakeNewsChecker/logout')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a0f6012c-e100-41bd-bc85-08834b1d5c28",
+    "name": "Segnalazione di notizie sospette",
+    "commands": [{
+      "id": "de80e6c0-ae05-44a3-bafb-2dbfea798a68",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FakeNewsChecker/visualizzaNotizie",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccbe14d8-0ec0-4aa8-9759-5347a24b567a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f890877-3558-4751-843c-f961bbb3614a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.news-card:nth-child(1) span",
+      "targets": [
+        ["css=.news-card:nth-child(1) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Segnala come sospetto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9651d43-b977-4fbc-a357-be24eb4a74c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=descrizione",
+      "targets": [
+        ["id=descrizione", "id"],
+        ["name=descrizione", "name"],
+        ["css=#descrizione", "css:finder"],
+        ["xpath=//textarea[@id='descrizione']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1452e26d-c520-4236-b9a4-00177664003c",
+      "comment": "",
+      "command": "type",
+      "target": "id=descrizione",
+      "targets": [
+        ["id=descrizione", "id"],
+        ["name=descrizione", "name"],
+        ["css=#descrizione", "css:finder"],
+        ["xpath=//textarea[@id='descrizione']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Notizia vera"
+    }, {
+      "id": "fba62931-f8cd-422c-bbb1-789f329fd68e",
+      "comment": "",
+      "command": "click",
+      "target": "id=url",
+      "targets": [
+        ["id=url", "id"],
+        ["name=url", "name"],
+        ["css=#url", "css:finder"],
+        ["xpath=//input[@id='url']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee3cbd8c-2aaa-448c-b013-1a8fecc252fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=url",
+      "targets": [
+        ["id=url", "id"],
+        ["name=url", "name"],
+        ["css=#url", "css:finder"],
+        ["xpath=//input[@id='url']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "https://articolo.verificato"
+    }, {
+      "id": "5ff8f754-acff-4a3e-9ab2-1d4e35db36e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=descrizione",
+      "targets": [
+        ["id=descrizione", "id"],
+        ["name=descrizione", "name"],
+        ["css=#descrizione", "css:finder"],
+        ["xpath=//textarea[@id='descrizione']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af3a1a2-7230-4a27-9d1a-23837c3dd8e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=descrizione",
+      "targets": [
+        ["id=descrizione", "id"],
+        ["name=descrizione", "name"],
+        ["css=#descrizione", "css:finder"],
+        ["xpath=//textarea[@id='descrizione']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Notizia vera"
+    }, {
+      "id": "87e46671-e6ca-47ee-a361-ea91ae8d7be4",
+      "comment": "",
+      "command": "click",
+      "target": "id=autore",
+      "targets": [
+        ["id=autore", "id"],
+        ["name=autore", "name"],
+        ["css=#autore", "css:finder"],
+        ["xpath=//input[@id='autore']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "379f872d-3f6c-4583-a6a3-a41a547960cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=autore",
+      "targets": [
+        ["id=autore", "id"],
+        ["name=autore", "name"],
+        ["css=#autore", "css:finder"],
+        ["xpath=//input[@id='autore']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Autore"
+    }, {
+      "id": "d34b1783-e610-4385-aa02-d7ce9bc7a649",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Invia Segnalazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "130d0473-8e9e-4976-9c7d-d5522a89f6ca",
+    "name": "Aggiornamento stato articolo",
+    "commands": [{
+      "id": "390edee5-f990-4c5c-9c17-3d6b5974c36d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FakeNewsChecker/Interface/AutenticazioneGUI/Login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5fe0661-0f2c-428f-974e-442654d4fbd3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d9e48d9-935a-45e0-aea6-e6159d76942b",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "782014c5-738f-442f-b26b-4f841846a8a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "luca.bianchi@example.com"
+    }, {
+      "id": "02d46572-6843-4401-8d28-aeb481363697",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e6340f4-6b57-410a-b3b7-8876e1a8aa4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "16dbbdd9-51c7-4f01-b675-6070f29c45ca",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "aea35fa1-9ece-40c8-8d43-540eb3c535fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.segnalazione-card:nth-child(2) .btn-reject",
+      "targets": [
+        ["css=.segnalazione-card:nth-child(2) .btn-reject", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Non Attendibile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28ecdc4c-ccf2-4c7c-b1d3-3e74b2eac91c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.segnalazione-card:nth-child(2) .btn-verify",
+      "targets": [
+        ["css=.segnalazione-card:nth-child(2) .btn-verify", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Verifica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4bf4abb7-3498-481b-8d07-97dc70fb8157",
+    "name": "Gestione del sistema",
+    "commands": [{
+      "id": "51c86bdf-1929-4c3b-b73b-147efc78b984",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FakeNewsChecker/Interface/AutenticazioneGUI/Login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d5baba7-2123-42cf-a2ef-13156300973a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0025dbba-ef5b-474b-a71c-40d3148bb99b",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da1dd688-2d45-44c9-9adf-07ca01ea8da0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "sara.verdi@example.com"
+    }, {
+      "id": "bdeaa424-1c9c-4de3-afc4-70a783b49257",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e06648f6-3829-49bf-bb90-f949d6cbb857",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "30041427-c0ba-4e07-ad96-70802833c623",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "2331c50c-1393-4ee7-a0c7-226e7b3d7fb1",
+    "name": "Registrazione",
+    "commands": [{
+      "id": "f4578ada-7592-47ae-a66f-df78ec5802ce",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FakeNewsChecker/Interface/AutenticazioneGUI/Login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b587efe-92b9-48cb-ae98-8a5275f43e42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0849e2c8-b07e-44fb-951e-5d27b24f5f96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrati",
+      "targets": [
+        ["linkText=Registrati", "linkText"],
+        ["css=.text-blue-600:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrati')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/FakeNewsChecker/Interface/AutenticazioneGUI/Register.jsp')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e4626f1-0aca-4811-91b0-afe764cf9285",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70b036e7-a866-4c40-8e98-e96907a27854",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Anna"
+    }, {
+      "id": "33605c19-42d2-40ee-9f25-f8512ab41b62",
+      "comment": "",
+      "command": "click",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a66de659-0c84-4ebb-a25d-05e92092c8d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Rossi"
+    }, {
+      "id": "c8b31050-f695-468b-b204-c71d76f64ff9",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefono",
+      "targets": [
+        ["id=telefono", "id"],
+        ["name=telefono", "name"],
+        ["css=#telefono", "css:finder"],
+        ["xpath=//input[@id='telefono']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d26f70-a982-4801-a564-f996e2d7b424",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefono",
+      "targets": [
+        ["id=telefono", "id"],
+        ["name=telefono", "name"],
+        ["css=#telefono", "css:finder"],
+        ["xpath=//input[@id='telefono']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "3485124847"
+    }, {
+      "id": "b97ac1cc-07ab-47e4-841e-74f800abee6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca28cd27-f001-4404-b587-9f48646da23b",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "anna@rossii.com"
+    }, {
+      "id": "9f06fe94-4c55-4bf5-af39-2da959e812be",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f64caaef-d402-4953-a481-2e869363898c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "password123!"
+    }, {
+      "id": "722b8ed8-22e8-443d-8947-b14edbec242b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "29f17800-29eb-449c-8b3b-308515cd4c02",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/FakeNewsChecker/Interface/AutenticazioneGUI/Login.jsp", "http://localhost:8080/FakeNewsChecker/visualizzaNotizie"],
+  "plugins": []
+}

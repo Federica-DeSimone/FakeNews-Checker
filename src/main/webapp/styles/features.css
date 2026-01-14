@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.features-section {
+    padding: 80px 20px;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Grid 1 colonna su mobile, 3 su desktop */
+.features-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Feature item */
+.feature-item {
+    text-align: center;
+}
+
+/* Icona quadrata con bordo */
+.icon-box {
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.feature-icon[src*="icon-search.png"] {
+  width: 100px;   /* più grande rispetto alle altre */
+  height: 100px;
+}
+
+
+/* Titolo */
+.feature-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+}
+
+/* Testo */
+.feature-desc {
+    color: #666;
+    max-width: 260px;
+    margin: 0 auto;
+}
