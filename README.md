@@ -17,11 +17,11 @@ Il sistema mira a promuovere la consapevolezza digitale e il pensiero critico, f
 
 ⚙️Funzionalità principali: 
 
-  ✔️consultazione notizie: visibile a tutti gli utenti
+  ✔️Consultazione notizie: visibile a tutti gli utenti
   
   🚨 Segnalazione notizie sospette: gli utenti registrati possono segnalare le     notizie che ritengono sospette. 
 
-  🔍 verifica delle notizie: i gestori controllano le segnalazioni usufruendo di   fonti attendibili 
+  🔍 Verifica delle notizie: i gestori controllano le segnalazioni usufruendo di   fonti attendibili 
 
   ⚙️Monitoraggio tecnico: dashboard per il controllo del sistema, aggiornamenti. 
 
